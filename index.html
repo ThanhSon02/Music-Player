@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.1.1/css/all.min.css">
+    <title>Music PLayer</title>
+</head>
+<body>
+    <div class="player">
+        <!-- Dash board -->
+        <div class="dashboard">
+            <header>
+                <h4>Now playing:</h4>
+                <h2>String 57th & 9th</h2>
+            </header>
+
+            <!-- CD -->
+            <div class="cd">
+                <div class="cd-thumb" style="background-image: url('./assets/img/Sharks.jpg');"></div>
+            </div>
+
+            <!-- Control -->
+            <div class="control">
+                <div class="btn btn-repeat">
+                    <i class="fa-solid fa-arrow-rotate-right"></i>
+                </div>
+                <div class="btn btn-pre">
+                    <i class="fa-solid fa-backward-step"></i>
+                </div>
+                <div class="btn btn-toggle-play">
+                    <i class="icon-play fa-solid fa-play"></i>
+                    <i class="icon-pause fa-solid fa-pause"></i>
+                </div>
+                <div class="btn btn-next">
+                    <i class="fa-solid fa-forward-step"></i>
+                </div>
+                <div class="btn btn-random">
+                    <i class="fa-solid fa-shuffle"></i>
+                </div>
+            </div>
+
+            <!-- Progress -->
+            <input type="range" class="progress" value="0" step="1" min="0" max="100">
+            <audio id="audio" src=""></audio>
+        </div>
+
+        <!-- Play List -->
+        <div class="play-list">
+
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
